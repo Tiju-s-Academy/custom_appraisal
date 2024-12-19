@@ -10,12 +10,12 @@
     <record id="oh_appraisal_group_employee" model="res.groups">
         <field name="name">Employee</field>
         <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
-        <field name="category_id" ref="oh_appraisal.module_category_hr_appraisal"/>
+        <field name="category_id" ref="custom_appraisal.module_category_hr_appraisal"/>
     </record>
 <!--    Manager user group-->
     <record id="oh_appraisal_group_manager" model="res.groups">
         <field name="name">Manager</field>
-        <field name="category_id" ref="oh_appraisal.module_category_hr_appraisal"/>
+        <field name="category_id" ref="custom_appraisal.module_category_hr_appraisal"/>
         <field name="implied_ids" eval="[(4, ref('oh_appraisal_group_employee'))]"/>
         <field name="users" eval="[(4, ref('base.user_root'))]"/>
     </record>

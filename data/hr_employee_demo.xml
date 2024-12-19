@@ -8,7 +8,7 @@
             <field name="work_phone">(376)-3852-7863</field>
             <field name="work_email">chals@example.com</field>
             <field name="image_1920" type="base64"
-                   file="oh_appraisal/static/image/employee_resign.jpeg"/>
+                   file="custom_appraisal/static/image/employee_resign.jpeg"/>
         </record>
     </data>
 </odoo>

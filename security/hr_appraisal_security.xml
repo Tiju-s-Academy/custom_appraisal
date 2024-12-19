@@ -14,9 +14,9 @@
         <field name="name">HR Appraisal Employee Rule</field>
         <field name="domain_force">[('creater_id','=',user.id)]</field>
         <field name="global" eval="True"/>
-        <field name="model_id" ref="oh_appraisal.model_hr_appraisal"/>
+        <field name="model_id" ref="custom_appraisal.model_hr_appraisal"/>
         <field name="groups"
-               eval="[(4,ref('oh_appraisal.oh_appraisal_group_employee'))]"/>
+               eval="[(4,ref('custom_appraisal.oh_appraisal_group_employee'))]"/>
         <field name="perm_write" eval="True"/>
         <field name="perm_read" eval="True"/>
         <field name="perm_create" eval="True"/>
@@ -26,9 +26,9 @@
     <record id="hr_appraisal_rule_manager" model="ir.rule">
         <field name="name">HR Appraisal Manager Rule</field>
         <field name="global" eval="True"/>
-        <field name="model_id" ref="oh_appraisal.model_hr_appraisal"/>
+        <field name="model_id" ref="custom_appraisal.model_hr_appraisal"/>
         <field name="groups"
-               eval="[(4,ref('oh_appraisal.oh_appraisal_group_manager'))]"/>
+               eval="[(4,ref('custom_appraisal.oh_appraisal_group_manager'))]"/>
         <field name="perm_write" eval="True"/>
         <field name="perm_read" eval="True"/>
         <field name="perm_create" eval="True"/>
